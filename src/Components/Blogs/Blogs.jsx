@@ -3,16 +3,16 @@ import { useEffect } from "react";
 
 
 const Blogs = () => {
-    const [data, setData] = useState([])
+    const [blogs, setBlogs] = useState([])
     useEffect( () => {
         fetch('blogs.json')
         .then( res => res.json())
-        .then( data => setData(data) );
+        .then( data => setBlogs(data) );
     }, []);
-    console.log(data);
+    console.log(blogs);
     return (
-        <div>
-            
+        <div className="md:w-2/3">
+            <h1>Blog</h1>
         </div>
     );
 };
