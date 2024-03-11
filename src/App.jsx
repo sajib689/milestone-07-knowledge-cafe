@@ -11,6 +11,7 @@ const handleBookmarks = blog => {
   const newBookmarks = [...bookmarks, blog]
   setBookmarks(newBookmarks)
 }
+
   return (
     <>
      <Header/>

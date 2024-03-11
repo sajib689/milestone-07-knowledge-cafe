@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 
 const BookMarkSignle = ({ bookmark }) => {
+   
     return (
-        <div>
-            
+        <div className="bg-[#fff] text-[18px] font-bold p-3 rounded-lg mt-2">
+            <p>{bookmark.title}</p>
         </div>
     );
 };
